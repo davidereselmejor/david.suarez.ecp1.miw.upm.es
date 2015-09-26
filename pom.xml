@@ -4,7 +4,6 @@
 
 	<modelVersion>1.1.1</modelVersion>
 	<artifactId>david.suarez.ecp1.miw.upm.es</artifactId>
-
 	<groupId>es.upm.miw</groupId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -21,6 +20,7 @@
 		<log4j.version>2.2</log4j.version>
 		<maven.compiler.version>3.3</maven.compiler.version>
 		<maven.failsafe.version>2.12</maven.failsafe.version>
+		<database.driver>com.mysql.jdbc.Driver</database.driver>
 	</properties>
 
 	<profiles>
@@ -32,10 +32,14 @@
 				<property>
 					<name>environment.type</name>
 					<value>develop</value>
+				
 				</property>
 			</activation>
 			<properties>
 				<logs.level.root>debug</logs.level.root>
+				<database.Url>jdbc:mysql://localhost:3306/spai</database.Url>
+				<database.User>root</database.User>
+				<databaes.Password></databaes.Password>	
 			</properties>
 		</profile>
 		<!-- mvn install -Denvironment.type=preproduction -->
@@ -45,10 +49,14 @@
 				<property>
 					<name>environment.type</name>
 					<value>preproduction</value>
+
 				</property>
 			</activation>
 			<properties>
 				<logs.level.root>info</logs.level.root>
+				<database.url>jdbc:mysql://localhost:3306//miwXX</database.url>
+				<database.User> miwXX</database.User>
+				<database.Password>123456</database.Password>		
 			</properties>
 		</profile>
 		<!-- mvn install -Denvironment.type=production -->
@@ -58,10 +66,14 @@
 				<property>
 					<name>environment.type</name>
 					<value>production</value>
+
 				</property>
 			</activation>
 			<properties>
 				<logs.level.root>error</logs.level.root>
+				<database.url>jdbc:mysql://localhost:3306/u3546</database.url>
+				<database.User>u3546</database.User>
+				<database.Password>654321</database.Password>
 			</properties>
 		</profile>
 	</profiles>
