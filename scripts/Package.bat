@@ -1,7 +1,7 @@
 @echo off
 set workspace=C:\Users\bm0814\Desktop\Workspace\david.suarez.ecp1.miw.upm.es\maven
-set PATH=%PATH%C:\Program Files\Java\jdk1.8.0_40\bin;C:\Users\bm0814\Desktop\apache-maven-3.3.3\bin
-set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_40
+set PATH=%PATH%C:\Program Files\Java\jdk1.8.0_51\bin;C:\Users\bm0814\Desktop\apache-maven-3.3.3\bin
+set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_51
 echo -----------------------------------------
 echo . Deploy Pre Production (C) MIW
 echo -----------------------------------------
